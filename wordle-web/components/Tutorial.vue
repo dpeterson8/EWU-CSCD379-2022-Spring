@@ -115,8 +115,13 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'NuxtTutorial',
+<script lang="ts">
+import Vue from "vue"
+import Component from "vue-class-component"
+
+@Component
+export default class NuxtTutorialPage extends Vue{
+    name: string = 'NuxtTutorialPage';
 }
 </script>
+
