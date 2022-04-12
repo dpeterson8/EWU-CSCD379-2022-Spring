@@ -1,5 +1,7 @@
 # wordle-web
 
+[Assigment #1](https://gray-mushroom-0185eaa1e.1.azurestaticapps.net)
+
 ## Build Setup
 
 ```bash
