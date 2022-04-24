@@ -20,6 +20,8 @@
 
     <game-board :wordleGame="wordleGame" />
 
+    <wordlist :wordCheck="wordleGame.currentWord"></wordlist>
+
     <keyboard :wordleGame="wordleGame" />
   </v-container>
 </template>

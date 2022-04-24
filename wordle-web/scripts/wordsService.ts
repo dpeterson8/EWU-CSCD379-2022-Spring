@@ -3,6 +3,10 @@ export abstract class WordsService {
     return this.#words[Math.floor(Math.random() * this.#words.length)]
   }
 
+  static get wordList(): string[] {
+    return this.#words
+  } 
+
   // From: https://github.com/kashapov/react-testing-projects/blob/master/random-word-server/five-letter-words.json
   static readonly #words: string[] = [
     'acorn',
