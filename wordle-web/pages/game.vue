@@ -17,10 +17,11 @@
       {{ gameResult.text }}
       <v-btn class="ml-2" @click="resetGame"> Play Again? </v-btn>
     </v-alert>
+    
 
     <game-board :wordleGame="wordleGame" />
 
-    <wordlist :wordCheck="wordleGame.currentWord" />
+    <wordlist :wordleGame="wordleGame"/>
 
     <keyboard :wordleGame="wordleGame" />
   </v-container>
