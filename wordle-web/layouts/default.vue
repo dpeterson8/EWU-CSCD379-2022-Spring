@@ -4,6 +4,9 @@
       <router-link to="/" class="text-h4 font-weight-black no-decoration">
         Wordle
       </router-link>
+          <router-link to="/" class="  no-decoration">
+          <v-icon dark color="primary" x-large> mdi-magnify </v-icon>
+      </router-link>
       <v-spacer />
       <settings-dialog />
     </v-app-bar>

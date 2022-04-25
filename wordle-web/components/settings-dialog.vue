@@ -39,6 +39,9 @@
                   <v-list-item @click="purpleTheme">
                     <v-list-item-title> Purple </v-list-item-title>
                   </v-list-item>
+                  <v-list-item @click="orangeTheme">
+                    <v-list-item-title> Orange </v-list-item-title>
+                  </v-list-item>
                 </v-list-item-group>
               </v-list>
             </v-menu>
@@ -66,7 +69,7 @@ export default class SettingsDialog extends Vue {
   }
 
   turnOffTheLights() {
-    // Implement Me
+    this.$vuetify.theme.dark = true
   }
 
   purpleTheme() {
@@ -83,5 +86,22 @@ export default class SettingsDialog extends Vue {
     this.$vuetify.theme.themes.dark = purpleTheme
     this.$vuetify.theme.themes.light = purpleTheme
   }
+
+
+    orangeTheme() {
+    const orangeTheme = {
+      primary: colors.orange,
+      accent: colors.orange.lighten4,
+      secondary: colors.orange,
+      info: '#FFF3E0',
+      warning: colors.orange.lighten3,
+      error: colors.orange.accent4,
+      success: colors.orange.lighten4,
+    }
+
+    this.$vuetify.theme.themes.dark = orangeTheme
+    this.$vuetify.theme.themes.light = orangeTheme
+  }
+
 }
 </script>
