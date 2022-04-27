@@ -1,15 +1,31 @@
 <template>
   <v-row>
     <v-col class="text-center">
-      <img src="/v.png" alt="Vuetify.js" class="mb-5" />
-      <blockquote class="blockquote">
-        &#8220;First, solve the problem. Then, write the code.&#8221;
-        <footer>
-          <small>
-            <em>&mdash;John Johnson</em>
-          </small>
-        </footer>
-      </blockquote>
+      <v-card class="logo py-4 d-flex justify-center">
+        <NuxtLogo />
+        <VuetifyLogo />
+      </v-card>
+      <v-card>
+        <v-card-title class="headline">
+          Welcome to the Vuetify + Nuxt.js template
+        </v-card-title>
+        <v-card-text>
+          <p>
+            This project will be a simple copy of the game Wordle for my CSCD379 Web
+            Application class.
+          </p>
+          <p>
+            For more information on Vuetify, check out the
+            <a
+              href="https://vuetifyjs.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              documentation </a
+            >.
+          </p>
+        </v-card-text>
+      </v-card>
     </v-col>
   </v-row>
 </template>
