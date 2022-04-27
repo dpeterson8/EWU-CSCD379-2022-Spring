@@ -2,7 +2,7 @@ Please feel free to submit updates.
 
 [Assignments Link](Assignments.md)
 
-[Assigment #1](https://gray-mushroom-0185eaa1e.1.azurestaticapps.net)
+[Assigment #2](https://gray-mushroom-0185eaa1e.1.azurestaticapps.net)
 
 [Lectures Link](Lectures.md)
 
