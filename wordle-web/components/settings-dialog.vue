@@ -42,6 +42,9 @@
                   <v-list-item @click="orangeTheme">
                     <v-list-item-title> Orange </v-list-item-title>
                   </v-list-item>
+                  <v-list-item @click="redTheme">
+                    <v-list-item-title> Red </v-list-item-title>
+                  </v-list-item>
                 </v-list-item-group>
               </v-list>
             </v-menu>
@@ -101,6 +104,21 @@ export default class SettingsDialog extends Vue {
 
     this.$vuetify.theme.themes.dark = orangeTheme
     this.$vuetify.theme.themes.light = orangeTheme
+  }
+
+    redTheme() {
+    const redTheme = {
+      primary: colors.red,
+      accent: colors.red.lighten4,
+      secondary: colors.red,
+      info: '#FFEBEE',
+      warning: colors.red.lighten3,
+      error: colors.red.accent4,
+      success: colors.red.lighten4,
+    }
+
+    this.$vuetify.theme.themes.dark = redTheme
+    this.$vuetify.theme.themes.light = redTheme
   }
 
 }
