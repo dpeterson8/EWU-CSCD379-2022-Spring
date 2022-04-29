@@ -20,9 +20,9 @@
           1) Each of guess must be a real word. <br/>
           2) Enter your 5 letter word into the keyboard on screen.<br/>
           3) Once you enter you word the following colors can mean:<br />
-            GREEN - Correct letter in the correct position
-            YELLOW - Correct letter in the following position
-            RED - Letter not in the word.
+            GREEN - Correct letter in the correct position<br />
+            YELLOW - Correct letter in the following position <br />
+            RED - Letter not in the word. <br />
           4) Once the word is guessed correct an alert will appear
 
         </v-card-text>
