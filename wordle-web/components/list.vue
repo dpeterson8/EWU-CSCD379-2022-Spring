@@ -1,16 +1,8 @@
 <template>
   <v-card>
-
-    <v-btn
-    fab
-    @click.stop="display = !display"
-    >
-      {{ wordListLength() }}
-    </v-btn>
-
       <v-virtual-scroll
           :bench="benched"
-          :items="findWord()"
+          :items="findWord(wordCheck)"
           v-if="display"
           height="300"
           width = "150"
@@ -41,20 +33,19 @@ import { WordsService } from '~/scripts/wordsService'
 import { WordleGame } from '~/scripts/wordleGame'
 
 @Component
-export default class WordList extends Vue {
+export default class List extends Vue {
     wordList!: string[]
-    display: boolean = false
+    display!: false
     @Prop({ required: true })
     wordleGame!: WordleGame
 
-
-    findWord() {
+    findWord(word: string) {
       this.wordList = []
       var tempList = WordsService.wordList;
       var newList:string[] = [];
       var check = true;
-      
       tempList.forEach(x => {
+
         var temp = x.split(''); 
         var i = 0;
         this.wordleGame.currentWord.text.split('').forEach(e => {
@@ -67,19 +58,17 @@ export default class WordList extends Vue {
           newList.push(x) 
         }
         else {check = true}
+
       });
 
       return newList;
     }
 
     selectWord(word: string) {
-      if(!(word === this.wordleGame.currentWord.text)) {
-        this.clearCurrentWord()
-        word.split('').forEach(e => {
+      this.clearCurrentWord()
+      word.split('').forEach(e => {
         this.setLetter(e)
-        });
-      }
-
+      });
     }
 
     setLetter(char: string) {
@@ -99,7 +88,7 @@ export default class WordList extends Vue {
     }
 
     wordListLength() {
-      return this.findWord().length
+      return this.findWord(this.wordleGame.currentWord.text).length
     }
 
 }

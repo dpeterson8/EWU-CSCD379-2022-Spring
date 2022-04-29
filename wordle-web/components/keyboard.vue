@@ -21,6 +21,7 @@
     >
       Guess
     </v-btn>
+
     <v-btn
       :disabled="wordleGame.gameOver"
       icon

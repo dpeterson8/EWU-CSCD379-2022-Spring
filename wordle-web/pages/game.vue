@@ -38,6 +38,7 @@ import { Word } from '~/scripts/word'
 @Component({ components: { KeyBoard, GameBoard } })
 export default class Game extends Vue {
   word: string = WordsService.getRandomWord()
+  testBool!: false
   wordleGame = new WordleGame(this.word)
 
   resetGame() {
