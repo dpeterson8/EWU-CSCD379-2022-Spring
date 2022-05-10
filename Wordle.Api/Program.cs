@@ -38,11 +38,14 @@ using (var scope = app.Services.CreateScope())
     ScoreStatsService.Seed(context);
 }
 // Configure the HTTP request pipeline.
-//if (app.Environment.IsDevelopment())
-//{
+if (app.Environment.IsDevelopment())
+{
 app.UseSwagger();
 app.UseSwaggerUI();
-//}
+
+
+    app.UseSwaggerUI();
+}
 
 app.UseHttpsRedirection();
 
