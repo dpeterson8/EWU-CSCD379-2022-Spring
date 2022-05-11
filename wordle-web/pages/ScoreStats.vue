@@ -16,12 +16,14 @@
         <v-simple-table>
           <thead>
             <tr>
+              <th>Name</th>
               <th>Score</th>
               <th>Avg. Seconds</th>
             </tr>
           </thead>
           <tbody>
             <tr v-for="(stat, index) in stats" :key="index">
+              <td>{{ stat.name }}</td>
               <td>{{ stat.score }}</td>
               <td>{{ stat.averageSeconds }}</td>
             </tr>
@@ -43,7 +45,7 @@ export default class ScoreStats extends Vue {
   stats: any = []
 
   refreshStats() {
-    this.$axios.get('/api/ScoreStats').then((response) => {
+    this.$axios.get('https://wordle-api-3.azurewebsites.net/api/ScoreStats').then((response) => {
       this.stats = response.data
     })
   }
