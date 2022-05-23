@@ -1,4 +1,4 @@
-# wordle-web
+# wordle-ad-farm
 
 [Assigment #1](https://gray-mushroom-0185eaa1e.1.azurestaticapps.net)
 

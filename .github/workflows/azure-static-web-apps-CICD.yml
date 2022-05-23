@@ -1,11 +1,18 @@
 name: Azure Static Web Apps CI/CD
+<<<<<<< HEAD
  
+=======
+env:
+  API_URL: ${{secrets.API_URL}}
+>>>>>>> Assignment4
 on:
   push:
     branches:
       - main
+      - "Assignment*"
     paths:
       - 'wordle-web/**'
+      - '**/azure-static-web*'
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
@@ -17,6 +24,7 @@ jobs:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed') || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     name: Build and Deploy Job
+      
     steps:
       - uses: actions/checkout@v2
         name: Checkout source
@@ -62,3 +70,4 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           action: "close"
+          
