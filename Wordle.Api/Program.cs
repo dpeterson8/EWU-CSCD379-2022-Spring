@@ -41,19 +41,13 @@ using (var scope = app.Services.CreateScope())
     Word.SeedWords(context);
 }
 // Configure the HTTP request pipeline.
-<<<<<<< HEAD
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-=======
-//if (app.Environment.IsDevelopment())
-//{
 app.UseSwagger();
 app.UseSwaggerUI();
-//}
->>>>>>> Assignment4
 
 app.UseHttpsRedirection();
 
