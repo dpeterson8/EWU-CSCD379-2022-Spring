@@ -1,10 +1,8 @@
 name: Azure Static Web Apps CI/CD
-<<<<<<< HEAD
- 
-=======
+
 env:
   API_URL: ${{secrets.API_URL}}
->>>>>>> Assignment4
+
 on:
   push:
     branches:
