@@ -44,6 +44,12 @@
           </v-btn>
         </v-list-item>
 
+                <v-list-item>
+          <v-btn text block nuxt to="/instructions">
+            Instructions <v-icon>mdi-equalizer</v-icon>
+          </v-btn>
+        </v-list-item>
+
         <v-list-item>
           <v-btn text block>
             <SettingsDialog />
