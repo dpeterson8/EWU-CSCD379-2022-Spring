@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="bg-primary">
     <v-row justify="center">
       <v-col cols="8">
         <v-card color="transparent" flat>
@@ -26,6 +26,7 @@ import Component from 'vue-class-component'
 @Component
 export default class IndexPage extends Vue {}
 </script>
+
 
 <!-- <v-btn color="info" nuxt to="/leaderboard">
             Leader Board

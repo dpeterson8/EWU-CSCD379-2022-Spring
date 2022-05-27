@@ -124,4 +124,3 @@ export default class NuxtTutorialPage extends Vue{
     name: string = 'NuxtTutorialPage';
 }
 </script>
-

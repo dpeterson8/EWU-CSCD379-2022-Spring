@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app dark :style="{background: '#BBDEFB'}">
     <v-app-bar :clipped-left="clipped" fixed app>
       <v-toolbar-title>
         <v-btn nuxt to="/">
@@ -77,6 +77,9 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+</style>
 
 <!-- 
 <v-tooltip bottom>

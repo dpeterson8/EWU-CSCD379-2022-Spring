@@ -71,6 +71,7 @@ export default {
           warning: colors.amber.base,
           error: colors.grey.darken4,
           success: colors.green.accent3,
+          background: colors.blue.lighten4,
         },
         light: {
           primary: colors.blue.darken2,
@@ -80,6 +81,7 @@ export default {
           warning: colors.amber.base,
           error: colors.grey.darken1,
           success: colors.green.accent3,
+          background: colors.blue.lighten4,
         },
       },
     },

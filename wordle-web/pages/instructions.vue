@@ -27,13 +27,16 @@
       <v-col cols="8">
         <v-card>
           <div class="d-flex align-center">
-            <v-icon size="150" class="ma-6">mdi-file-word-box</v-icon>
+            <v-icon size="150" class="ma-6 testIcon">mdi-file-word-box</v-icon>
             <v-card-text decoration>  
                 Never played wordle? No problem, here are all the needed
                 rules and instructions to play wordle:
-                 1.
-                 2.
-                 3.
+                <br/> 1. Everyday wordle will have a random word you are meant to guess!
+                <br/> 2. You will have five guesses for each word.
+                <br/> 3. When guessing a word characters can be represented by a green, yellow, or red background.
+                <br/>   green - character is in word and in correct location.
+                <br/>   yellow - character is in word but in the wrong location.
+                <br/>   red - character is not present in word.
             </v-card-text>
           </div>
         </v-card>
@@ -50,3 +53,17 @@ import Component from 'vue-class-component'
 @Component
 export default class InstructionsPage extends Vue {}
 </script>
+
+<style scoped>
+
+  @media (max-width: 640px) {
+    .testIcon{
+      display: none;
+    }
+  }
+
+  body{
+    background: red;
+  }
+
+</style>

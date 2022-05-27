@@ -146,3 +146,7 @@ export default class KeyBoard extends Vue {
   }
 }
 </script>
+
+<style scoped>
+
+</style>
